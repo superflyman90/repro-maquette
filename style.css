@@ -130,3 +130,23 @@ body {
     text-decoration: underline;
     text-decoration-color: #000;
 }
+.content p {
+    font-style: normal;
+font-weight: 300;
+font-size: 30px;
+line-height: 40px;
+}
+
+.icons {
+    position: absolute;
+    bottom: 5%;
+    left: 11%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icon__items{
+    display: flex;
+    list-style-type: none;
+}
