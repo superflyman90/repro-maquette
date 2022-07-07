@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 30px;
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 59px 112px;
+    align-items: center;     
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.logo-img {
+    width: 35px;
+    height: 40px;
+    margin-right: 20px;
+}
+.logo-title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-items {
+    list-style-type: none;
+    margin: 0 10px;
+}
+.nav-items a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0 10px;
+}
+.app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 90px 1fr;
+    grid-template-areas: 
+        "header header"
+        "left right";
+    gap: 25px;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.right {
+    grid-area: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-hero {
+    position: relative;
+    display: flex;
+    height: 719px;
+    width: 712px;
+    align-items: center;
+    justify-content: center;
+}
+.heroBackground {
+    position: absolute;
+}
+.hero {
+    position: absolute;
+    left: 76px;
+    top: 34px;    
+    z-index: 1;
+}
+.left{
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.container-present {
+    display: flex;
+    flex-direction: column;
+    height: 719px;
+    width: 712px;
+    margin-left: 20%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.hello {
+    background: linear-gradient(90deg, #32F6F6 0%, #A6A79F 100%);
+    border-radius: 50px 50px 50px 0px;
+    font-weight: 700;
+    font-size: 36px;
+    color: #FFF;
+    padding: 14px 43px;
+    
+}
+.content {
+    
+}
+.content h3 {
+    font-size: 64px;
+    font-weight: 500;
+}
+.content h3 span {
+    font-weight: bold;
+    color: #737373;
+    text-decoration: underline;
+    text-decoration-color: #000;
+}
